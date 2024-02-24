@@ -21,7 +21,8 @@ Activate the module by adding it to the config.js file as shown below.
         url: "https://busstops.aacps.org/public/BusRouteIssues.aspx", // The web page URL to check
         bus: "111", // The bus number to look for
         image: "https://tse4.mm.bing.net/th/id/OIG3.lMh29Wgi3XZZsAbBLOV8?w=270&h=270&c=6&r=0&o=5&pid=ImgGn", // Bus icon
-        updateInterval: 10 * 1000, // How often to check the web page (in seconds)
+        imageSize: "100%", // size of the image.  Default is 100%
+        updateInterval: 60 * 1000, // How often to check the web page (in milliseconds).  Default is 60 seconds
     },
 }
 
