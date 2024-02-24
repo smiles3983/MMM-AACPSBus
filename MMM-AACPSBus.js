@@ -11,6 +11,7 @@ Module.register("MMM-AACPSBus", {
 		url: "", // The web page URL to check
 		bus: "", // The string to look for
 		image: "", // The image to display if the string is found
+		imageSize: "100%",
 		updateInterval: 60 * 1000 // How often to check the web page (in milliseconds)
 	},
 
@@ -38,7 +39,7 @@ Module.register("MMM-AACPSBus", {
 
 			// Set the image source and style
 			image.src = this.config.image;
-			image.style.width = "50%";
+			image.style.width = this.config.imageSize;
 			image.style.height = "auto";
 
 			var message = document.createElement("div");
